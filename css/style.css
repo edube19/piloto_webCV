@@ -1,0 +1,111 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background:linear-gradient(103.72deg, #7BC75E 22.76%, #61C27F 41.75%, #42BCA7 66.45%, #37BAB7 79.74%);
+    color: white;
+    text-align: center;
+    padding: 40px 0 60px; 
+    position: relative;   
+}
+
+header h1 {
+    font-size: 4.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.tagline {
+    font-size: 2.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0.9;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #0078d7;
+    text-align: center;
+    font-size: 36px;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: -70px auto;
+    display: block;
+    border: 3.5px green solid;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#about {
+    padding-top: 130px;   /* Espacio para que la imagen no tape el contenido */
+    background: white;    /* Fondo blanco (o el que uses) */
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background: #f4f4f4;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+#skills h3{
+    margin: 15px 0px 15px 0px;
+}
+
+.company{
+    font-style: italic;
+}
+
+.job h3{
+    margin: 15px 0px 15px 0px;
+}
+
+
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content {
+        text-align: center;
+    }
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    #about {
+        padding-top: 80px;
+    }
+}
