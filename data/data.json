@@ -1,26 +1,43 @@
 {
-    "nombre": "Eduardo Berrios",
-    "titulo": "Bachiller en Ingeniería de Sistemas",
-    "sobre_mi": "¡Hola! Soy Eduardo Berrios, Bachiller de la carrera de ingeniería de Sistemas en la Universidad Nacional de Ingeniería...",
+    "header": {
+      "nombre": "Eduardo Berrios",
+      "titulo": "Titulado en Ingeniería de Sistemas"
+    },
+    "sobre_mi": "¡Hola! Soy Eduardo Berrios, Bachiller de la carrera de ingeniería de Sistemas en la Universidad Nacional de Ingeniería buscando desarrollarse en el área de tecnología. Proactivo, innovador y con experiencia para trabajar con equipos. Excelente capacidad de comunicación verbal, con alta capacidad analítica y rapidez de aprendizaje, con ganas de obtener los mejores resultados.",
+    "habilidades": {
+      "Lenguajes de programacion": ["Python", "JavaScript", "Java", "SQL"],
+      "Páginas Web": ["HTML/CSS", "Web Scrapping (Playwrigth)"],
+      "Base de Datos": ["MongoDB (No relacionales)", "SQL (SQL Alchemy y Flask)"]
+    },
     "experiencia": [
-      {
-        "puesto": "Practicante del área de Sistemas",
-        "empresa": "Paino",
-        "fecha": "Mayo 2022 - Febrero 2023",
-        "descripcion": [
-          "Desarrollo e implementación de software en lenguaje Python.",
-          "Desarrollo del backend en Python para una página de venta de departamentos."
-        ]
-      },
-      {
-        "puesto": "Asistente del área de logística",
-        "empresa": "Casino de Policia",
-        "fecha": "Marzo 2023 - Mayo 2023",
-        "descripcion": [
-          "Desarrollo e implementación de mejoras al sistema de registro de facturas.",
-          "Desarrollo de un RPA para el control de hospedaje."
-        ]
-      }
+        {
+            "puesto": "Técnico de Soporte de Operaciones",
+            "empresa": "INDRA - Movistar",
+            "fecha": "junio 2023 - Diciembre 2023",
+            "funciones": [
+                "Seguimiento y resolución de casos relacionados a servicios de televisión, internet y móvil.",
+                "Análisis y correcciones de casos de diversas plataformas."
+            ]
+        },
+        {
+            "puesto": "Asistente del área de logística",
+            "empresa": "Casino de Policia",
+            "fecha": "Marzo 2023 - Mayo 2023",
+            "funciones": [
+                "Desarrollo de RPA para control de hospedaje.",
+                "Mejoras al sistema de registro de facturas."
+            ]
+        },
+        {
+            "puesto": "Practicante del área de Sistemas",
+            "empresa": "Paino",
+            "fecha": "Mayo 2022 - Febrero 2023",
+            "funciones": [
+                "Desarrollo e implementación de software en Python.",
+                "Mantenimiento de sistemas y redes.",
+                "Desarrollo de bots y Web Scraping."
+            ]
+        }
     ],
     "contacto": {
       "email": "eberriosv@uni.pe",
