@@ -1,0 +1,30 @@
+{
+    "nombre": "Eduardo Berrios",
+    "titulo": "Bachiller en Ingeniería de Sistemas",
+    "sobre_mi": "¡Hola! Soy Eduardo Berrios, Bachiller de la carrera de ingeniería de Sistemas en la Universidad Nacional de Ingeniería...",
+    "experiencia": [
+      {
+        "puesto": "Practicante del área de Sistemas",
+        "empresa": "Paino",
+        "fecha": "Mayo 2022 - Febrero 2023",
+        "descripcion": [
+          "Desarrollo e implementación de software en lenguaje Python.",
+          "Desarrollo del backend en Python para una página de venta de departamentos."
+        ]
+      },
+      {
+        "puesto": "Asistente del área de logística",
+        "empresa": "Casino de Policia",
+        "fecha": "Marzo 2023 - Mayo 2023",
+        "descripcion": [
+          "Desarrollo e implementación de mejoras al sistema de registro de facturas.",
+          "Desarrollo de un RPA para el control de hospedaje."
+        ]
+      }
+    ],
+    "contacto": {
+      "email": "eberriosv@uni.pe",
+      "linkedin": "https://linkedin.com/in/tuperfil",
+      "github": "https://github.com/edube19"
+    }
+  }
