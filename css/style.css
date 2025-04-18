@@ -188,20 +188,24 @@ footer {
 
     /* Linea de tiempo */
     .timeline::before {
-        left: 20px;
+        left: 250px;
     }
     .timeline-item {
         flex-direction: column;
     }
     .timeline-date,
     .timeline-content {
-        width: 100%;
+        width: 85%;
         text-align: left;
+    }
+    .timeline-content{
+        margin-left: 28px;
     }
     .timeline-date {
         margin-bottom: 10px;
     }
     .timeline-item::after {
-        left: 10px;
+        left: 250px;
+        top:10px;
     }
 }
