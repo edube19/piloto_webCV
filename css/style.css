@@ -87,7 +87,101 @@ h2 {
     margin: 15px 0px 15px 0px;
 }
 
+/*Linea de tiempo*/
 
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Línea central */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #0078d7;
+    transform: translateX(-50%);
+}
+
+/* Items generales */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    opacity: 0; /* Para animación */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Items izquierda */
+.timeline-item.left {
+    left: 0;
+    transform: translateX(-20px);
+    animation: fadeInLeft 0.3s ease forwards;
+}
+
+/* Items derecha */
+.timeline-item.right {
+    left: 50%;
+    transform: translateX(20px);
+    animation: fadeInRight 0.3s ease forwards;
+}
+
+/* Animaciones */
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Punto indicador */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #0078d7;
+    border-radius: 50%;
+    top: 15px;
+    z-index: 1;
+}
+
+.timeline-item.left::after {
+    right: -10px;
+}
+
+.timeline-item.right::after {
+    left: -10px;
+}
+
+/* Contenido */
+.timeline-content {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease; /* Transición más lenta */
+}
+
+.timeline-item:hover .timeline-content {
+    max-height: 500px; /* Ajusta según tu contenido */
+    padding-left: 25px;
+}
 
 footer {
     background: #333;
@@ -107,5 +201,16 @@ footer {
     }
     #about {
         padding-top: 80px;
+    }
+    .timeline::before {
+        left: 20px;
+    }
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        left: 0 !important;
+    }
+    .timeline-item::after {
+        left: 10px !important;
     }
 }
