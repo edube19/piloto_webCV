@@ -88,7 +88,6 @@ h2 {
 }
 
 /*Linea de tiempo*/
-
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -96,11 +95,11 @@ h2 {
     padding: 40px 0;
 }
 
-/* Línea central */
+/* Línea vertical central */
 .timeline::before {
     content: '';
     position: absolute;
-    left: 50%;
+    left: 30%;
     top: 0;
     width: 2px;
     height: 100%;
@@ -108,31 +107,50 @@ h2 {
     transform: translateX(-50%);
 }
 
-/* Items generales */
+/* Items de la línea de tiempo */
 .timeline-item {
+    display: flex;
+    /*justify-content: space-between;*/
+    margin-bottom: 50px;
     position: relative;
-    width: 50%;
-    padding: 10px 40px;
-    box-sizing: border-box;
-    margin-bottom: 30px;
-    opacity: 0; /* Para animación */
-    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Items izquierda */
-.timeline-item.left {
-    left: 0;
-    transform: translateX(-20px);
-    animation: fadeInLeft 0.3s ease forwards;
+/* Fecha (izquierda) */
+.timeline-date {
+    width: 35%;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    color: #0078d7;
 }
 
-/* Items derecha */
-.timeline-item.right {
-    left: 50%;
-    transform: translateX(20px);
-    animation: fadeInRight 0.3s ease forwards;
+/* Contenido (derecha) */
+.timeline-content {
+    width: 60%;
+    padding: 20px;
+    background: #46bca0;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
+.timeline-content ul {
+    list-style-type: none; /* Elimina los puntos */
+    padding-left: 0;      /* Opcional: quita el padding izquierdo por defecto */
+}
+
+/* Punto indicador */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #0078d7;
+    border-radius: 50%;
+    left: 30%;
+    top: 15px;
+    transform: translateX(-50%);
+    z-index: 1;
+}
 /* Animaciones */
 @keyframes fadeInLeft {
     to {
@@ -146,41 +164,6 @@ h2 {
         opacity: 1;
         transform: translateX(0);
     }
-}
-
-/* Punto indicador */
-.timeline-item::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: #0078d7;
-    border-radius: 50%;
-    top: 15px;
-    z-index: 1;
-}
-
-.timeline-item.left::after {
-    right: -10px;
-}
-
-.timeline-item.right::after {
-    left: -10px;
-}
-
-/* Contenido */
-.timeline-content {
-    background: #f9f9f9;
-    border-radius: 8px;
-    padding: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease; /* Transición más lenta */
-}
-
-.timeline-item:hover .timeline-content {
-    max-height: 500px; /* Ajusta según tu contenido */
-    padding-left: 25px;
 }
 
 footer {
@@ -202,15 +185,23 @@ footer {
     #about {
         padding-top: 80px;
     }
+
+    /* Linea de tiempo */
     .timeline::before {
         left: 20px;
     }
     .timeline-item {
+        flex-direction: column;
+    }
+    .timeline-date,
+    .timeline-content {
         width: 100%;
-        padding-left: 70px;
-        left: 0 !important;
+        text-align: left;
+    }
+    .timeline-date {
+        margin-bottom: 10px;
     }
     .timeline-item::after {
-        left: 10px !important;
+        left: 10px;
     }
 }
