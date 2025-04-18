@@ -11,6 +11,17 @@
     },
     "experiencia": [
         {
+            "puesto": "Desarrollador Fullstack",
+            "empresa": "Universidad Ricardo Palma",
+            "fecha": "julio 2024 - Actualidad",
+            "funciones": [
+                "Elaboración de páginas mediante componentes",
+                "Desarrollo de web apps",
+                "Publicaciones de la Institución",
+                "Mantenimiento, capacitacipón del gestor web de la Universdiad"
+            ]
+        },
+        {
             "puesto": "Técnico de Soporte de Operaciones",
             "empresa": "INDRA - Movistar",
             "fecha": "junio 2023 - Diciembre 2023",
