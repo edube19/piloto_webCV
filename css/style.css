@@ -9,6 +9,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
+    background: radial-gradient(circle, rgb(0, 255, 210) 0%, rgb(0, 177, 211) 50%, rgb(0, 80, 110) 100%);
 }
 
 .container {
@@ -39,7 +40,7 @@ header h1 {
 
 h2 {
     margin-bottom: 20px;
-    color: #0078d7;
+    color: white;
     text-align: center;
     font-size: 36px;
 }
@@ -59,7 +60,6 @@ h2 {
 
 #about {
     padding-top: 130px;   /* Espacio para que la imagen no tape el contenido */
-    background: white;    /* Fondo blanco (o el que uses) */
 }
 
 .skills-list {
