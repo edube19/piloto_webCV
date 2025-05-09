@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Sobre Mí
                 document.querySelector('#about .about-content p').textContent = data.sobre_mi;
 
+                //Perfil
+                document.querySelector('#perfil .perfil-content p').textContent = data.perfil;
+
                 // Habilidades
                 
                 const skillsContainer = document.querySelector('#skills .container');
